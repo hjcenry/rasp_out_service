@@ -5,7 +5,7 @@ from django.shortcuts import render
 
 
 def get_status(request):
-    invoke_shell = "python3 /home/pi/Soft/python/enterBjNotify/launch.py 1 4"
+    invoke_shell = "cd /home/pi/Soft/python/enterBjNotify;python3 /home/pi/Soft/python/enterBjNotify/launch.py 0 1 4"
     result = os.system(invoke_shell)
     render_str = ''
     if result is 0:
